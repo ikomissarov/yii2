@@ -43,8 +43,8 @@ $config = [
         'db' => require(__DIR__ . '/db.php'),
         'urlManager' => [
 			'enablePrettyUrl' => true,
-			'enableStrictParsing' => true,
-			'showScriptName' => false,
+			'enableStrictParsing' => false,
+			'showScriptName' => true,
 			'rules' => [
 				['class' => 'yii\rest\UrlRule', 'controller' => ['students' => 'student-rest']],
 			],
